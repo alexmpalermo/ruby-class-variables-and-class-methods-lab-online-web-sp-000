@@ -37,8 +37,9 @@ end
 
 def self.genre_count
   genre_hash = {}
-  @@genres.map do |x|
-    genre_hash[@@genres.uniq] << x.count
-end
+  
+
  end 
+ 
+ 
 end
