@@ -44,10 +44,14 @@ class Song
 
 
 def self.genre_count
-  genre_hash = {}
-  
-
- end 
- 
+   genre_count = {}
+    @@genres.uniq.each do |genre|
+      genre_count[genre] = 0
+    end
+    @@genres.each do |genre|
+      genre_count[genre] +=1
+    end
+    genre_count
+  end
  
 end
